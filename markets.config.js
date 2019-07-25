@@ -4,16 +4,16 @@ tomorrow.setDate(tomorrow.getDate() + 1);
 module.exports = [
   {
     questionId: `0x${"0".repeat(63)}1`,
-    title: `A or B?`,
+    title: `Will the share price of Tesla be above or below $300 at market close, ${tomorrow.toISOString()}.`,
     resolutionDate: tomorrow.toISOString(),
     outcomes: [
       {
-        title: "A",
+        title: "Above",
         short: "A",
         when: "A"
       },
       {
-        title: "B",
+        title: "Below",
         short: "B",
         when: "B"
       }
@@ -21,16 +21,16 @@ module.exports = [
   },
   {
     questionId: `0x${"0".repeat(63)}2`,
-    title: `X or Y?`,
+    title: `Elon Musk will step down as CEO of Tesla on or before ${tomorrow.toISOString()}.`,
     resolutionDate: tomorrow.toISOString(),
     outcomes: [
       {
-        title: "X",
-        short: "X",
-        when: "X"
+        title: "No",
+        short: "N",
+        when: "N"
       },
       {
-        title: "Y",
+        title: "Yes",
         short: "Y",
         when: "Y"
       }
